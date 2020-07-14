@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <title>Render Example</title>
+    <style>
+            body {
+               background-color: lightyellow;
+            }
+            em {
+                color: rgb(233, 117, 8);
+            }
+
+    </style>
+</head>
+<body>
+<h1>Hello {{name}}</h1>
+<div>哆啦a夢給你溫暖的眼神</div>
+<div><img src="{%static 'example/img/doreamon.gif'%}"></div>
+<em>{{ current_time }}</em>
+</body>
+</html>
